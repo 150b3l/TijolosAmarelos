@@ -1,0 +1,43 @@
+.yarndings-20-regular {
+    font-family: "Yarndings 20", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+}
+
+.tv-static {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.texto-sobreposto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px black;
+}
+
+.texto-sobreposto h1 {
+    font-size: 3em;
+    margin: 0.2em;
+}
+
+.texto-sobreposto p {
+    font-size: 1.2em;
+    margin: 0.5em;
+    opacity: 0.8;
+}
