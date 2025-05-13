@@ -8,10 +8,10 @@ function generateStatic() {
         const imageData = ctx.createImageData(canvas.width, canvas.height);
         for (let i = 0; i < imageData.data.length; i += 4) {
             const shade = Math.random() * 255;
-            imageData.data[i] = shade;      // R
-            imageData.data[i + 1] = shade;  // G
-            imageData.data[i + 2] = shade;  // B
-            imageData.data[i + 3] = 255;    // Alpha
+            imageData.data[i] = shade;
+            imageData.data[i + 1] = shade;
+            imageData.data[i + 2] = shade;
+            imageData.data[i + 3] = 255;
         }
         ctx.putImageData(imageData, 0, 0);
     }
